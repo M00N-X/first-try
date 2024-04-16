@@ -1,6 +1,7 @@
-# first-try2
+# first-try
 # nom: andriamanana
 # prenom : volatiana elsa
+# email-adress : elsaandriamanana15@gmail.com
 # MI 
 # L1
 
@@ -8,7 +9,8 @@ exo 1
 Ecriture d'un algorithme et un programme en python qui permet d'afficher la table de verité d'une fonction donnee 
 puis afficher sa premiere forme canonique et sa deuxieme forme canonique:
 
-def generer_table_de_verite(nombre_variables, fonction_logique, variables):
+
+    def generer_table_de_verite(nombre_variables, fonction_logique, variables):
     table_verite = []
     for i in range(2 ** nombre_variables):
         combinaison = []
@@ -22,7 +24,7 @@ def generer_table_de_verite(nombre_variables, fonction_logique, variables):
         table_verite.append((combinaison, resultat))
     return table_verite
 
-def afficher_formes_canoniques(table_verite, variables):
+    def afficher_formes_canoniques(table_verite, variables):
     if table_verite is None:
         return
     mintermes = [combinaison for combinaison, resultat in table_verite if resultat]
@@ -50,7 +52,7 @@ def afficher_formes_canoniques(table_verite, variables):
     print("Première forme canonique de la fonction :", " or ".join(fonction_premiere_forme))
     print("Deuxième forme canonique de la fonction :", " and ".join(fonction_deuxieme_forme))
 
-def principale():
+    def principale():
     while True:
         try:
             nombre_variables = int(input("Entrez le nombre de variables : "))
