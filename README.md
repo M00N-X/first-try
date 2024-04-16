@@ -1,4 +1,13 @@
-# first-try
+# first-try2
+# nom: andriamanana
+# prenom : volatiana elsa
+# MI 
+# L1
+
+exo 1
+Ecriture d'un algorithme et un programme en python qui permet d'afficher la table de verité d'une fonction donnee 
+puis afficher sa premiere forme canonique et sa deuxieme forme canonique:
+
 def generer_table_de_verite(nombre_variables, fonction_logique, variables):
     table_verite = []
     for i in range(2 ** nombre_variables):
